@@ -9,8 +9,8 @@
 :root{
     --Soft-orange: hsl(35, 77%, 62%);
     --Soft-red: hsl(5, 85%, 63%);
-
-
+    
+    
     --Off-white: hsl(36, 100%, 99%);
     --Grayish-blue: hsl(233, 8%, 79%);
     --Dark-grayish-blue: hsl(236, 13%, 42%);
@@ -97,7 +97,7 @@ nav .links a:last-child{
 
 .intro h1{
     flex: 1;
-    margin-right: 30px;
+    margin-right: 2rem;
     color: var(--Very-dark-blue);
     font-size: 2rem;
     font-weight: 800;
@@ -107,13 +107,69 @@ nav .links a:last-child{
     flex: 2;
 }
 
-.intro .description{
-    
+.intro .description p{
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-bottom: 1.3rem;
+}
+
+.intro .description button{
+    background-color: var(--Soft-red);
+    padding: 10px 12px;
+    color: var(--Off-white);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.intro .description button:hover{
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+
 }
 
 .news{
     grid-area: news;
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    padding: 30px;
 }
 
+.news h2{
+    color: var(--Soft-orange);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
 
+.news .card{
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--Grayish-blue);
+    margin-bottom: 20px;
+}
 
+.news .card:last-child{
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
+.news .card h3{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--Off-white)
+}
+
+.news .card h3:hover{
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+.news .card p{
+    color: var(--Grayish-blue);
+    font-size: 13px;
+    line-height: 1.5;
+}
