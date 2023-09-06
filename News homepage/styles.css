@@ -317,24 +317,24 @@ nav .links a:last-child{
         "intro"
         "news";
     }
-
+    
     .img-web3-mobile{
         display: block;
     }
-
+    
     .img-web3-desktop{
         display: none;
     }
-
+    
     .intro{
         flex-direction: column;
     }
-
+    
     .intro h1{
         margin-bottom: 10px;
         font-size: 2.5rem;
     }
-
+    
     .intro .description{
         line-height: 1.5;
     }
@@ -347,7 +347,7 @@ nav .links a:last-child{
         margin-right: 0;
         margin-bottom: 30px;
     }
-
+    
     .best-tech h4{
         margin: 5px 0px
     }
