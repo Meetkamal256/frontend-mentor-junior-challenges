@@ -44,7 +44,7 @@ nav .links a{
     text-decoration: none;
     margin-right: 14px;
     color: var(--Dark-grayish-blue);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 nav .links a:hover{
