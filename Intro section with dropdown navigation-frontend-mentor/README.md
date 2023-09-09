@@ -4,7 +4,8 @@
 
 ### Screenshot
 
-![Screenshot from 2023-09-09 15-01-12](https://github.com/Meetkamal256/frontend-mentor-junior-challenges/assets/104779844/b40fb68d-0a2b-4ff9-a13a-4c9a01ebb388)
+![Screenshot from 2023-09-09 15-10-32](https://github.com/Meetkamal256/frontend-mentor-junior-challenges/assets/104779844/3e6d9386-6516-4d5c-8f45-c4e888565d24)
+
 
 ### Links
 
