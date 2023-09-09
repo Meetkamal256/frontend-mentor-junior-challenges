@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+
+:root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px; 
+    background-color: var(--Almost-White);
+} 
+
+.container{
+    margin: 20px auto;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+header{
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+    padding: 20px;
+    transition: 0.3s;
+     
+}
+
+header .navbar ul li a{
+    text-decoration: none;
+    font-size: 15px;
+  
+    color: var(--Medium-Gray);
+    display: block;
+    transition: 0.3s;
+}
+
+header .navbar ul li a:hover{
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+
+header .navbar ul li .dropdown-menu ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 150px;
+    box-shadow: 4px 4px 7px rgba(0,0,0,0.2);
+    display: none;
+    border-radius: 15px;
+   
+}
+
+header .navbar ul li .dropdown-menu ul li{
+    width: 100%;
+}
+
+header .navbar ul li:hover .dropdown-menu ul{
+    cursor: pointer;
+    display: block;
+}
+
+#menu-bar{display: none;}
+header label{display: none;}
+
+.learn{
+    font-size: 15px;
+    width: 5rem;
+    text-transform: none;
+    background-color: var(--Almost-White);
+    border: none;
+    cursor: pointer;
+    color: var(--Almost-Black);
+}
+
+.reg{
+    font-size: 15px;
+    color: var(--Medium-Gray);
+    width: 5rem;
+    text-transform: none;
+    background-color: #fff;
+    border: 1px solid var(--Medium-Gray);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px;
+}
+
+.reg:hover{
+    color: var(--Almost-Black);
+    border: 1.5px solid var(--Almost-Black);
+
+}
+
+/* hero-section */
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    grid-gap: 80px;
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+.hero-content{
+    margin-top: 80px;
+}
+
+.hero-header{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-content p{
+    color: var(--Medium-Gray);
+    margin: 50px 0px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.btn-learn{
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    border: none;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.btn-learn:hover{
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    border: 1px solid var(--Almost-Black);
+}
+
+.client-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+ 
+
+/* responsive */
+@media(max-width: 600px){
+    
+    .container{
+        margin: 20px 30px;
+    }
+    .header{
+        padding: 20px;
+    }
+    
+    .navbar ul {
+        display: none;
+      }
+    
+    
+    .learn{
+        display: none;
+    }
+    .reg{
+        display: none;
+    }
+    
+    
+    
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-item-1 {
+        order: 2; 
+      }
+      
+      .hero-item-2 {
+        order: 1; 
+        z-index: 99;
+      }
+  
+}
+
+
+
+
+
+
+

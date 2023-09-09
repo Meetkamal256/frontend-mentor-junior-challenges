@@ -3,37 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/dacccb715c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  Features
+  <main>
+    <div class="container">
+      <header>
+        <a href="#"><img src="images/logo.svg" alt="logo"></a>
+        
+        <input type="checkbox" name="" id="menu-bar">
+        <label for="menu-bar"></label>
+        
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Features <img src="images/icon-arrow-down.svg" alt=""></a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#"><img src="images/icon-todo.svg" alt=""> TodoList</a></li>
+                    <li><a href="#"><img src="images/icon-calendar.svg" alt=""> Calender</a></li>
+                    <li><a href="#"><img src="images/icon-reminders.svg" alt=""> Reminder</a></li>
+                    <li><a href="#"><img src="images/icon-planning.svg" alt=""> Planning</a></li>
+                  </ul>
+                </div>
+            </li>
+            
+            <li><a href="#">Company <img src="images/icon-arrow-down.svg" alt=""></a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our team</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+            </li>
+            
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button class="learn">Login</button>
+          <button class="reg">Register</button>
+        </div>
+      
+      
+      </header>
+      
+      <section class="hero">
+        <div class="hero-content hero-item-1">
+           <h1 class="hero-header">Make <br>Remote work</h1>
+        <p class="hero-copy">  Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+        <button class="btn-learn">Learn more</button>
+        <div class="client-list">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+          </div>
+        </div>
+          <div class="hero-image hero-item2">
+          <img src="images/image-hero-desktop.png" alt="hero-img">
+        </div>
+      </section>
+    </div>
+  </main>
+ 
+ 
+ 
+ 
+ 
+  <!-- Features
   Company
   Careers
   About
-
+  
   Login
   Register
-
+  
   Make remote work
-
+ 
   Get your team in sync, no matter your location. Streamline processes, 
   create team rituals, and watch productivity soar.
-
-  Learn more
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Learn more
+   -->
 </body>
 </html>
